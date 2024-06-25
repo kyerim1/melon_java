@@ -8,3 +8,7 @@
 4. 왼쪽 java 항목에서 Compiler 선택하여 11로 변경
 
 5. 새프로젝트 생성할때 jdk11 선택하여 만들기
+
+
+git  연결 방법
+window 메뉴에서  -> show view -> other  ->  창에서 git 펼치고 -> git repositories 선택 -> open
