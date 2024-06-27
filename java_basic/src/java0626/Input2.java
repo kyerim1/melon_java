@@ -20,9 +20,10 @@ public class Input2 {
 		 */
 		Scanner sc = new Scanner(System.in);
 		
-		String name, dept;
-		int money;
+		String name=null, dept=null;
+		int money=0;
 		float tax = 0.08f;
+		int salary=0;
 		
 		System.out.print("이름 : ");
 		name = sc.nextLine();
@@ -31,10 +32,30 @@ public class Input2 {
 		
 		System.out.print("월 급여 : ");
 		money = sc.nextInt();
+		//  Integer.parseInt(sc.nextLine())
 		
-		int salary = (int)(money - (money*tax)) ;
+		salary = (int)(money - (money*tax)) ;
 		
 		System.out.println("이름 : "+name +" 부서 : "+dept+" 수령액 : "+salary);
+		
+		sc.nextLine();
+		System.out.print("이름 : ");
+		name = sc.nextLine();
+		System.out.print("부서 : ");
+		dept = sc.nextLine();
+		System.out.print("월 급여 : ");
+		money = sc.nextInt();
+		
+		salary = (int)(money - (money*tax)) ;
+		
+		System.out.println("이름 : "+name +" 부서 : "+dept+" 수령액 : "+salary);
+		
+		
+		
+		/*
+		 	next() -  스페이스키, 탭키, 엔터키를 누르면 입력 끝
+		 	nextLine() - 엔터키 누르면 입력 끝
+		 */
 		
 		
 	}
