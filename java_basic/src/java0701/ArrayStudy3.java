@@ -45,13 +45,11 @@ public class ArrayStudy3 {
 				else
 					System.out.printf(" %2d ",bingo[i]);
 			}
-			
-			// 빙고 숫자 선택
 			System.out.print("\n빙고숫자 입력 : ");
-			int num = scan.nextInt();
+				int num = scan.nextInt();
 			
 			// 선택한 숫자 표시 하기
-			for(int i=0; i<bingo.length; i++) {
+for(int i=0; i<bingo.length; i++) {
 				if( num == bingo[i]) {
 					bingo[i]=0; break;
 				}
