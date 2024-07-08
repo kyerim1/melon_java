@@ -12,3 +12,38 @@
 
 git  연결 방법
 window 메뉴에서  -> show view -> other  ->  창에서 git 펼치고 -> git repositories 선택 -> open
+
+
+
+데이터베이스 설치
+
+MySql 8.0.37
+다운로드 주소
+https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-8.0.37.0.msi 
+
+설치
+1. 다운로드 파일 실행
+2. custom 선택 next
+3. Mysql Server , Mysql Workbench, Samples Adn Examples  추가
+4. next 후에 installation 전에 항목이 있으면 관련 프로그램 설치 이기 때문에 반드시 설치 후 next
+5. excute 클릭후 next 하여 port 번호 확인 next
+6.  Use Legacy Authentication.... 선택 후 next
+7.  비밀번호 설정 후  next
+8.  서비스이름은 그냥 해도 되고 MySql 해도 되고 next
+9.  next
+10.  excute
+11.  finish -> next -> (userName root  있는 화면 나요면 비번 입력하고 chck 후 next ->next->finish
+
+
+mysql 계성 생성및 권한
+계정 생성
+create user 계정명 identified by '1234';
+
+데이터베이스 생성
+create database DB명;
+
+계정 권한
+grant all privileges on DB명.* to 계정명@'%';
+
+계정 권한 변경 적용
+flush privileges;
