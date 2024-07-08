@@ -33,3 +33,17 @@ https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-8.0
 9.  next
 10.  excute
 11.  finish -> next -> (userName root  있는 화면 나요면 비번 입력하고 chck 후 next ->next->finish
+
+
+mysql 계성 생성및 권한
+계정 생성
+create user 계정명 identified by '1234';
+
+데이터베이스 생성
+create database DB명;
+
+계정 권한
+grant all privileges on DB명.* to 계정명@'%';
+
+계정 권한 변경 적용
+flush privileges;
