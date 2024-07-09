@@ -17,6 +17,35 @@ public class BoardDAO {
 		Connect(); // 데이터베이스 접속
 	}
 	
+	// test_board 테이블의 데이터 가져와서 Board클래스 객체로 저장하기
+	public Board[] findByAll() {
+		Board[] list = new Board[7]; // Board클래스 객체 7개 저장하기 위한 배열
+		
+		String sql = "select * from test_board";//sql질의문, 쿼리문
+		
+		// select 사용시 - executeQuery 메서드 , 
+		// insert,update,delete 사용시 - executeUpdate 메서드
+		try {
+			st = conn.createStatement(); // statement생성
+			rs = st.executeQuery(sql);
+			int i=0; // 배열의 인덱스
+			while(rs.next()) {
+				list[i] = new Board(  rs.getInt("board_id") ,
+						rs.getString("title"), rs.getString("writer"),
+						rs.getString("content"), rs.getInt("hit") );
+				i++;
+			}
+			
+		}catch(Exception e) {
+			System.out.println("데이터 가져오기 실패");
+		}
+		
+		return list;
+	}
+	
+	
+	
+	
 	
 	private void DriverLoad() { // 드라이버 로드
 		try {
