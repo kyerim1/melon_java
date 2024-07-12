@@ -1,6 +1,7 @@
 package java0711;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListStudy1 {
 
@@ -58,10 +59,34 @@ public class ArrayListStudy1 {
 		
 		System.out.println( list );
 		
-		Member t = new Member("장보고",0,"0");
+		// 개발자가 정의한 클래스를 컬렉션에 사용하는경우
+		// 컬렉션의 메서드 들을 온전히 사용하려면 필요한 메서드를 
+		// 클래스에 구현 해야 한다.  
+		// 필요한 메서드는 최상위 부모 클래스인 Object가 가지고 있다.
+		// 추가로 컬렉션에 관련된 인터페이스를 implements 하기도 해야한다.
 		
-		list.indexOf( t );
+		Member t = new Member("장보고", 28, "19960712");
 		
+		System.out.println( list.indexOf( t ) ); // Member클래스객체를 indexOf에 넣어서 찾기
+		
+		System.out.println( list.contains( t) );
+		
+		list.remove( t) ;
+		System.out.println( list );
+		
+		list.forEach( m -> System.out.println(m) );
+		
+		Member[] mem = list.toArray(new Member[list.size()]);
+		
+		for(Member mm : mem) {
+			System.out.println( mm);
+		}
+		
+		
+		// 정렬
+		Collections.sort( list );
+		System.out.println("====정렬 후 =====");
+		list.forEach( m -> System.out.println(m) );
 		
 	}
 

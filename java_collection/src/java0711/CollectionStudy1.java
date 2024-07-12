@@ -103,7 +103,7 @@ public class CollectionStudy1 {
 		//  이름이 저장 되어있는 ArrayList에 이순신이 없으면 추가저장 하고
 		//  있으면 저장안하기    문제
 		
-		if( !names.contains("이순신") ) {
+		if( !names.contains( new String("이순신") ) ) {
 			names.add("이순신");
 		}
 		System.out.println( names );
