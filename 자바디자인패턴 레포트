@@ -1,0 +1,39 @@
+발표일 : 7월 24일 13시 40분
+2~3인 1조로 과제 수행
+자바 디자인 패턴 중 하나를 선택하여 
+예시 코드를 만들고  발표 PPT만들기 
+( 다른 사람들에게 선태한 디자인 패턴을 설명)
+
+1조 - 전형준, 서석완  -  프로토타입
+2조 - 황정아, 이미진, 박찬미   - 싱글톤
+3조 - 김건우, 정한종     - 어댑터
+4조 - 박재범, 송미연    - 옵저버
+5조 - 이재호, 유재학    - 템플릿 메서드
+6조 - 서형준, 이유찬    - 팩토리 메서드
+7조 - 이연상, 김경제    - 퍼사드
+8조- 이상민, 송영진    - 빌더
+
+디자인패턴
+1. Abstract Factory(추상팩토리)
+2. Builder (빌더)               -> 8조 선택
+3. Factory Method(팩토리메서드)  -> 6조 선택
+4. Prototype ( 프로토타입)
+5. Singleton (싱글톤)            -> 2조 선택
+6. Adapter (어댑터)
+7. Bridge (브릿지)
+8. Composite ( 컴포지트 )
+9. Decorator (데코레이터)
+10. Facade ( 퍼사드)             -> 7조 선택
+11. Flyweight (플라이웨이트)
+12. Proxy (프록시)
+13. Chain of Responsibility(책임연쇄)
+14. Command (커맨드)
+15. Interpreter(인터프리터)
+16. Iterator (이터레이터)
+17. Mediator(미디에이터)
+18. Memento (메멘토)
+19. Observer (옵저버)             -> 4조 선택
+20. State (스테이트)
+21. Strategy ( 스트래티지)
+22. Template Method(템플릿메서드)
+23. Vistor (비지터)
