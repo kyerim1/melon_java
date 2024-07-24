@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%
+	String part = request.getParameter("part");
+
+	if( part == null) part="main";
+
+%>    
+    
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +17,7 @@
 
 <link rel="stylesheet" href="default.css">
 
-<link rel="stylesheet" href="main.css"> 
+<link rel="stylesheet" href="<%=part %>.css"> 
 
 </head>
 <body>
@@ -17,7 +26,8 @@
 		<jsp:include page="header.jsp" />
 		
 		<div id="main">
-			<jsp:include page="main.jsp" />
+			<% String subPage = part+".jsp"; %>
+			<jsp:include page="<%=subPage%>" />
 		</div>
 		
 		<jsp:include page="footer.jsp" />		
