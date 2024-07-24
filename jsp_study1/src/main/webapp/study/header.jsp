@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <%
-	String path="http://localhost:8080/jsp_study1/sessionTest/";
+	String path="http://localhost:8080/jsp_study1/study/";
 %>
     
 <div id="header">
