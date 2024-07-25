@@ -25,7 +25,7 @@
 	}
 	
 	if( isCreate ){
-		sql = "insert into inquiry(title,writer,content,email, password) values(?,?,?,?)";
+		sql = "insert into inquiry(title,writer,content,email, password) values(?,?,?,?,?)";
 		try{
 			db.pt = db.conn.prepareStatement(sql);
 			db.pt.setString(1, title);
