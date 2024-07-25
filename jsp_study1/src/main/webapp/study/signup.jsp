@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+    
 <%--  스타일을 적용 하고 싶다면 signup.css 에 작성하기 --%>
 
 <div id="signupBox">

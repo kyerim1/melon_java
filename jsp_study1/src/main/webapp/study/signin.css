@@ -12,6 +12,7 @@
 .loginInput{
 	margin-bottom:10px;
 	display:flex;
+	flex-wrap:wrap;
 	align-items:center;
 	font-size:25px;
 }
@@ -24,6 +25,9 @@
 	border-radius:10px;
 	font-size:20px;
 	padding-left:10px;
+}
+.loginInput p{
+	width:400px;
 }
 #loginBt{
 	width:100%;
