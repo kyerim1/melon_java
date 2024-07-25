@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="study.*"%>
 
 <%-- inquiry.jsp    문의 페이지에 스타일 적용하려면 inquiry.css  --%>
 
@@ -23,7 +23,7 @@
 			<% 
 				for( int i=0; i<0; i++){
 			%>
-			<li>
+			<li class='list'>
 				<span class="title"></span>
 				<span class="writer"></span>
 				<span class="isAnswer"></span>
