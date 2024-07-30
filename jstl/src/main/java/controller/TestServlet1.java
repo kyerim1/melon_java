@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class TestServlet1
  */
-@WebServlet("/my")
+@WebServlet("/test1")
 public class TestServlet1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -27,7 +29,11 @@ public class TestServlet1 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("MY servlet doGet method").append(request.getContextPath());
+		// response.getWriter().append("").append(request.getContextPath());
+		// response.sendRedirect("/"); 사용자요청 주소를변경하여 페이지처리
+		
+		RequestDispatcher rd = request.getRequestDispatcher( "index.jsp"  );
+		rd.forward(request, response);
 	}
 
 	/**

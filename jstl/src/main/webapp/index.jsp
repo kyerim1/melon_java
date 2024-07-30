@@ -4,6 +4,13 @@
     
 <%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core"%>    
 
+<%--
+	<jsp:forward page="" />
+	<%
+		pageContext.forward("경로");
+	%>
+ --%>
+
     
 <%-- core태그 변수 --%>    
 <c:set var="num"  value="10"  />    
