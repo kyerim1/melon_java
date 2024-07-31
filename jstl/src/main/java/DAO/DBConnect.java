@@ -18,7 +18,7 @@ public class DBConnect {
 	
 	private void connect() {
 		String user= "melon";
-		String password="123456";
+		String password="1234";
 		String url="jdbc:mysql://localhost:3306/melon";
 		
 		try {

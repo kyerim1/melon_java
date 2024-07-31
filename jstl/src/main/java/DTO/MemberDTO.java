@@ -1,5 +1,6 @@
 package DTO;
 
+
 public class MemberDTO {
 	private int memberId;
 	private String userId;
