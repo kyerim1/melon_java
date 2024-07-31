@@ -6,6 +6,27 @@ import DTO.MemberDTO;
 
 public class MemberDAO extends DBConnect {  // 회원 관련 데이터베이스 작업 하는 클래스
 	
+	public boolean login( String id, String pw) { // 로그인 처리
+		String sql="select * from member where user_id=? and user_password=?";
+		
+		try {
+			pt = conn.prepareStatement(sql);
+			pt.setString(1, id);
+			pt.setString(2, pw);
+			rs = pt.executeQuery();// 사용자가입력한 아이디 비번이 존재한다면 값이있고
+			                       // 일치하는 값이 없으면  아무값도 없다.
+			if( rs.next() ) {
+				return true;
+			}
+		}catch(SQLException e) {
+			System.out.println("회원 로그인 조회 중 오류발생");
+		}
+		
+		return false;
+		
+	}
+	
+	
 	
 	public void save(MemberDTO member) { // 회원가입 내용 member 테이블에 저장
 		
