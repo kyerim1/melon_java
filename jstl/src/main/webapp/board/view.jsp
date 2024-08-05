@@ -60,7 +60,7 @@
 				<td> ${row.writer } <br> ${row.writeDate }
 					<br>
 					<c:if test="${sessionScope.user eq row.writer }"> 
-						<a href="/commentDelete.do?id=${row.commentId }">삭제</a>
+						<a href="/commentDelete.do?id=${row.commentId }&bid=${board.board_id}">삭제</a>
 					</c:if>
 				</td>
 				<td> ${row.comment }</td>
